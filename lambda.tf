@@ -15,7 +15,7 @@ resource "aws_lambda_function" "decrypt_payment" {
 
 # Lambda function for payment processing
 resource "aws_lambda_function" "payment_engine" {
-  function_name = "paygwruleengine"
+  function_name = "payment_engine"
   role          = aws_iam_role.payment_engine_role.arn
   handler       = "payment_engine.lambda_handler"
   runtime       = "python3.8"

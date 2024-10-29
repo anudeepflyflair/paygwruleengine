@@ -59,7 +59,7 @@ def process_payment_with_elavon(payment_data, api_key):
     """Send payment data to Elavon's API and return the response."""
     try:
         # Replace with the actual Elavon API endpoint
-        elavon_url = "https://api.elavon.com/v1/payments"
+        elavon_url = "https://api.elavon.com/v1/payments"  #need to replace with the real elavon api endpoint
         headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
         response = requests.post(elavon_url, headers=headers, json=payment_data)
         response.raise_for_status()
